@@ -13,40 +13,77 @@
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-
-    <div class="nav-div2">
-      <img class='logo' itemprop='image' src="logo-gray.jpg" alt= LOGO >
-      </a>
-      <a class="a" href="https://www.lewagon.com" target=" blank">
-        Log In
-      </a>
-      <a class= "a" href="https://www.lewagon.com" target=" blank">
-        Join!
-      </a>
-    </div>
-
-    <div class="nav-div">
-
-      <nav class="navbar">
-        <a class="a" href="https://www.lewagon.com" target=" blank">
-          HOME
-        </a>
-        <a class="a" href="https://www.lewagon.com" target=" blank">
-          SALONS
-        </a>
-        <a class="a" href="https://www.lewagon.com" target=" blank">
-          SERVICES
-        </a>
-        <div class="search-box-wrapper">
-          <input type="text" class="form-control" placeholder="Search...">
-          <button class="btn" type="submit">
-          <i class="fa fa-search"></i></button>
-        </div>
-      </nav>
-    </div>
   </head>
 
   <body>
+        <div class="wrapper-white ">
+  <div class="container">
+    <div class="navbar-kitt">
+      <a class="logo" href="/">
+
+</a>      <nav>
+
+
+              <a class="" href="#">Join!</a>
+
+            <a class="active" href="#">Log In</a>
+
+
+          <div class="dropdown batch-dropdown avatar-dropdown">
+            <a class="avatar-link" data-toggle="dropdown" href="#">
+              <img alt="" class="rounded-circle" src="https://avatars3.githubusercontent.com/u/41290584?v=4" />
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+  <li>
+    <a href="#">
+      <i class="fas fa-user"></i> My profile
+</a>  </li>
+  <li>
+    <a rel="nofollow" data-method="delete" href="/users/sign_out">
+      <i class="fas fa-sign-out-alt"></i>
+      <span>Sign out</span>
+</a>  </li>
+</ul>
+
+          </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper-black">
+  <div class="container">
+    <nav class="section-nav">
+      <div class="left-nav">
+        <a class="active" href="#">
+          <div class="d-none d-sm-block">Lectures</div>
+          <div class="d-sm-none">
+            <i class="mdi mdi-presentation-play"></i>
+              Lectures
+          </div>
+</a>        <a class="" href="#">
+          <div class="d-none d-sm-block">Tutorials</div>
+          <div class="d-sm-none">
+            <i class="mdi mdi-file-document-box"></i>
+          </div>
+</a>        <a class="" href="#">
+          <div class="d-none d-sm-block">Cheatsheets</div>
+          <div class="d-sm-none">
+            <i class="mdi mdi-format-list-bulleted"></i>
+          </div>
+</a>        <a class="" href="#">
+          <div class="d-none d-sm-block">Resources</div>
+          <div class="d-sm-none">
+            <i class="mdi mdi-link-variant"></i>
+          </div>
+</a>      </div>
+      <div class="right-nav">
+
+      </div>
+    </nav>
+  </div>
+</div>
 
     <%= yield %>
   </body>
